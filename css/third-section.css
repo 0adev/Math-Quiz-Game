@@ -29,6 +29,7 @@
   background-color: #e0df71;
   border: 1px solid #202020;
   display: flex;
+  cursor: pointer;
   justify-content: center;
   gap: 0.5rem;
   padding: 1rem;
