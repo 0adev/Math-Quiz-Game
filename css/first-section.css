@@ -1,0 +1,46 @@
+.container > .first-section {
+  display: grid;
+  place-items: center;
+  gap: 2.5rem;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+}
+
+.logo h1 {
+  color: #1e2130;
+  font-size: clamp(5rem, 6vw, 6.5rem);
+}
+
+.logo img {
+  width: 10rem;
+}
+
+.first-section .button {
+  all: unset;
+  background-color: #e0df71;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 500;
+  outline: 2px solid #202020;
+  padding: 1rem;
+  text-align: center;
+  transition: 250ms ease;
+  width: calc(100% - 5rem);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.first-section #spinner {
+  animation: loop 500ms linear infinite both;
+  display: none;
+}
+
+@keyframes loop {
+  to {
+    transform: rotate(360deg);
+  }
+}

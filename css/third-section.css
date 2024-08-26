@@ -1,0 +1,56 @@
+.container > .third-section {
+  display: grid;
+  gap: 2rem;
+  place-items: center;
+  width: 40rem;
+  display: none;
+}
+
+.score-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  font-size: 3rem;
+  width: 100%;
+}
+
+.score-info > * {
+  display: grid;
+  text-align: center;
+  font-weight: 600;
+  color: #202020;
+}
+
+.score-info span {
+  color: #ae7c59;
+}
+
+.retry-btn {
+  all: unset;
+  background-color: #e0df71;
+  border: 1px solid #202020;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  width: calc(100% / 2);
+  color: #202020;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.third-section .button {
+  all: unset;
+  background-color: #e0df71;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 500;
+  outline: 2px solid #202020;
+  padding: 1rem;
+  text-align: center;
+  transition: 250ms ease;
+  width: calc(100% - 5rem);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}

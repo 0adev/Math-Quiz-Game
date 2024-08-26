@@ -1,0 +1,72 @@
+.container > .second-section {
+  display: none;
+  gap: 2.5rem;
+  border: 2px solid #202020;
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  box-shadow: 0.875rem 0.875rem 0 #943737;
+  background-color: rgb(255, 65, 65);
+  width: 35rem;
+  color: #101010;
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.quiz-header .time {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.quiz-header img {
+  width: 3.5rem;
+}
+
+.quiz-header .time,
+.quiz-header .score {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.quiz-body {
+  display: grid;
+  place-items: center;
+  gap: 3rem;
+}
+
+.quiz-body .question {
+  background-color: #27070754;
+  width: 100%;
+  text-align: center;
+  padding-block: 3rem;
+  font-size: 6rem;
+  font-weight: 600;
+  color: #efefef;
+}
+
+.quiz-body .options {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+}
+
+.quiz-body #option {
+  all: unset;
+  cursor: pointer;
+  background-color: #f68834;
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid #202020;
+  font-size: 3rem;
+  font-weight: 600;
+  transition: 250ms ease;
+}
+
+.quiz-body #option:hover {
+  background-color: #e0c8ba;
+}
