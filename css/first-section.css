@@ -11,7 +11,7 @@
 
 .logo h1 {
   color: #1e2130;
-  font-size: clamp(5rem, 6vw, 6.5rem);
+  font-size: clamp(4rem, 6vw, 6.5rem);
 }
 
 .logo img {
@@ -23,7 +23,7 @@
   background-color: #e0df71;
   cursor: pointer;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   outline: 2px solid #202020;
   padding: 1rem;
   text-align: center;

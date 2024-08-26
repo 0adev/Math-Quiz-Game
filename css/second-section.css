@@ -7,6 +7,7 @@
   box-shadow: 0.875rem 0.875rem 0 #943737;
   background-color: rgb(255, 65, 65);
   width: 35rem;
+  margin: 0 auto;
   color: #101010;
 }
 
@@ -14,7 +15,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 3rem;
 }
 
 .quiz-header .time {
@@ -29,7 +29,7 @@
 
 .quiz-header .time,
 .quiz-header .score {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 5.875vw, 2.5rem);
   font-weight: 600;
 }
 
@@ -44,7 +44,7 @@
   width: 100%;
   text-align: center;
   padding-block: 3rem;
-  font-size: 6rem;
+  font-size: clamp(4rem, 5vw, 6rem);
   font-weight: 600;
   color: #efefef;
 }
@@ -62,11 +62,17 @@
   text-align: center;
   padding: 0.5rem;
   border: 1px solid #202020;
-  font-size: 3rem;
+  font-size: clamp(2.25rem, 5vw, 3rem);
   font-weight: 600;
   transition: 250ms ease;
 }
 
 .quiz-body #option:hover {
   background-color: #e0c8ba;
+}
+
+@media (max-width: 25rem) {
+  .container > .second-section {
+    width: 28rem;
+  }
 }
