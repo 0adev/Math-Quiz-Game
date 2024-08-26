@@ -1,7 +1,7 @@
 # Math Quiz Game
 
 <img src="./images/quiz-template.jpg">
-<a href="">Math quiz game</a>
+<a href="https://vocal-brigadeiros-36cf97.netlify.app">Give it a try!🔗</a>
 
 ## Overview
 
