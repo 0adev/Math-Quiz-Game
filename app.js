@@ -4,6 +4,7 @@ const thirdSection = document.querySelector(".third-section");
 const startButton = document.querySelector("#start-button");
 const spinner = document.querySelector("#spinner");
 const timeDisplay = document.querySelector(".second-section .time-number");
+const clockIcon = document.querySelector("#clock");
 const scoreDisplay = document.querySelector(".second-section .score");
 const questionDisplay = document.querySelector(".question");
 const optionsContainer = document.querySelector(".options");
@@ -99,8 +100,11 @@ function startTimer() {
     timeDisplay.innerHTML = timeLeft;
 
     if (timeLeft <= 0) {
+      clockIcon.style.animation = "none";
       clearInterval(timerInterval);
       endQuiz();
+    } else if (timeLeft < 10) {
+      clockIcon.style.animation = "vibration 250ms linear infinite";
     }
   }, 1000);
 }
@@ -119,6 +123,5 @@ function retryQuiz() {
   firstSection.style.display = "grid";
 }
 
-// event listeners
 startButton.addEventListener("click", startQuiz);
 retryButton.addEventListener("click", retryQuiz);

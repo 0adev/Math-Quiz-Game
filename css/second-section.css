@@ -25,6 +25,7 @@
 
 .quiz-header img {
   width: 3.5rem;
+  transform: rotate(30deg);
 }
 
 .quiz-header .time,
@@ -69,6 +70,12 @@
 
 .quiz-body #option:hover {
   background-color: #e0c8ba;
+}
+
+@keyframes vibration {
+  50% {
+    transform: translateX(1px) rotate(40deg);
+  }
 }
 
 @media (max-width: 25rem) {
