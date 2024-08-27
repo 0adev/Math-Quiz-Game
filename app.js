@@ -93,7 +93,7 @@ function nextQuestion() {
 }
 
 function startTimer() {
-  timeLeft = 20;
+  timeLeft = 60;
   timeDisplay.innerHTML = timeLeft;
 
   timerInterval = setInterval(() => {
