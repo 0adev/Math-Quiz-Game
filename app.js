@@ -50,7 +50,7 @@ function startQuiz() {
     correctAnswer = 0;
     startTimer();
     loadQuestion();
-  }, 1500);
+  }, Math.floor(Math.random() * 3000)); // generates random numbers of milliseconds between 0 (inclusive) and 3000 (exclusive).
 }
 
 // Load the current question
