@@ -18,28 +18,26 @@ The Math Quiz Game is an engaging web-based quiz application designed to test yo
 
 ### 1. **User Interface Elements**
 
-- `startButton`: Button to start the quiz.
-- `refreshIcon`: Icon (not currently used in the provided code) which might be for refreshing or additional functionality.
 - `firstSection`: The initial screen showing the start button.
 - `secondSection`: The quiz screen where questions and options are displayed.
 - `thirdSection`: The results screen showing the final score and time.
+- `startButton`: Button to start the quiz.
+- `spinner`: Loading spinner displayed while the quiz is starting.
 - `timeDisplay`: Displays the remaining time.
 - `scoreDisplay`: Displays the current score.
 - `questionDisplay`: Displays the current quiz question.
 - `optionsContainer`: Container for answer buttons.
-- `nextButton`: Button to proceed to the next question (not used in the provided code but implied).
 - `finalScoreDisplay`: Shows the final score at the end of the quiz.
 - `finalTimeDisplay`: Shows the time taken to complete the quiz.
 - `totalQuestionsDisplay`: Displays the number of correct answers.
 - `retryButton`: Button to restart the quiz.
-- `spinner`: Loading spinner displayed while the quiz is starting.
 
 ### 2. **Game Flow**
 
 #### Starting the Quiz
 
 - Clicking the `startButton` triggers the `startQuiz` function.
-- The `startQuiz` function shows a spinner for 1.5 seconds, hides the `firstSection`, and displays the `secondSection` (quiz screen).
+- The `startQuiz` function shows a spinner for a random of milliseconds between 0 and 3000, hides the `firstSection`, and displays the `secondSection` (quiz screen).
 - Initializes the score, question index, and correct answer count. Starts the timer and loads the first question.
 
 #### Loading Questions

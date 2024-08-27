@@ -35,11 +35,10 @@
 }
 
 .first-section #spinner {
-  animation: loop 500ms linear infinite both;
   display: none;
 }
 
-@keyframes loop {
+@keyframes spine {
   to {
     transform: rotate(360deg);
   }
