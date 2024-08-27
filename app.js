@@ -122,5 +122,3 @@ function retryQuiz() {
 // event listeners
 startButton.addEventListener("click", startQuiz);
 retryButton.addEventListener("click", retryQuiz);
-
-console.log("hello");
