@@ -45,6 +45,7 @@ function startQuiz() {
     hideSpinner();
     firstSection.style.display = "none";
     secondSection.style.display = "grid";
+    clockIcon.style.animation = "none";
     score = 0;
     correctAnswers = 0;
     currentQuestionIndex = 0;
@@ -92,7 +93,7 @@ function nextQuestion() {
 }
 
 function startTimer() {
-  timeLeft = 60;
+  timeLeft = 20;
   timeDisplay.innerHTML = timeLeft;
 
   timerInterval = setInterval(() => {
@@ -100,7 +101,6 @@ function startTimer() {
     timeDisplay.innerHTML = timeLeft;
 
     if (timeLeft <= 0) {
-      clockIcon.style.animation = "none";
       clearInterval(timerInterval);
       endQuiz();
     } else if (timeLeft < 10) {
